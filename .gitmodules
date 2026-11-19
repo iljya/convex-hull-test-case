@@ -1,0 +1,7 @@
+[submodule "manifold"]
+	path = third_party/manifold
+	url = https://github.com/elalish/manifold.git
+[submodule "cgal"]
+	path = third_party/cgal
+	url = https://github.com/CGAL/cgal.git
+	shallow = true
