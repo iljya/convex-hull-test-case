@@ -30,15 +30,15 @@ The regression test intentionally fails with the affected Manifold revision.
 Its output should resemble:
 
 ```text
-Manifold3D: FAIL (... worst outside distance about 0.01123)
+Manifold3D: FAIL (... worst outside distance about 1.1082)
 CGAL:       PASS (... worst outside distance near zero)
 ```
 
 The test succeeds once both backends return outward-oriented hulls containing
 every input point within the scale-relative tolerance.
 
-The submodules are pinned to Manifold3D commit
-`81ebaebdea2e2707cc87f59ec1c3bcbfe4ea7734` and CGAL v6.2 commit
+The submodules are pinned to Manifold3D v3.5.4 commit
+`ce50d78021d64507f89e8c9fc2c2e51018117857` and CGAL v6.2 commit
 `cac3e9d75e254928db0e38a3161564216cb01919`.
 
 ## License
