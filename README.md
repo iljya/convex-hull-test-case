@@ -37,6 +37,15 @@ CGAL:       PASS (... worst outside distance near zero)
 The test succeeds once both backends return outward-oriented hulls containing
 every input point within the scale-relative tolerance.
 
+To generate matching SVG views of the input points and both hull results, run:
+
+```sh
+./build/manifold_hull_repro --plot-dir plots
+```
+
+The command writes `plots/manifold.svg` and `plots/cgal.svg`. Both images use
+the same camera and scale, aligned to show Manifold's largest hull violation.
+
 The submodules are pinned to Manifold3D v3.5.4 commit
 `ce50d78021d64507f89e8c9fc2c2e51018117857` and CGAL v6.2 commit
 `cac3e9d75e254928db0e38a3161564216cb01919`.
